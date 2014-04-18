@@ -12,6 +12,7 @@
     (main/info "Generating fresh 'lein new' clj-webserver project.")
     (->files data
              ["data/.placeholder" ""]
+             [".gitignore" (render "gitignore")]
              ["project.clj" (render "project.clj" data)]
              ["dev/user.clj" (render "dev/user.clj" data)]
              ["config.clj" (render "config.clj" data)]
